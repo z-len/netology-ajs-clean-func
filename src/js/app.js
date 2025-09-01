@@ -1,14 +1,24 @@
 // TODO: write your code here
-import Game, {GameSavingData, readGameSaving as loadGame, writeGameSaving as saveGame} from "./game";
-console.log('worked');
+// import Game, {GameSavingData, readGameSaving as loadGame, writeGameSaving as saveGame} from "./game";
+// console.log('worked');
 
-const game = new Game();
-game.start();
+// const game = new Game();
+// game.start();
 
-const gameSavingData = new GameSavingData();
-gameSavingData.log();
+// const gameSavingData = new GameSavingData();
+// gameSavingData.log();
 
-loadGame();
+// loadGame();
 
-saveGame();
+// saveGame();
+import { healthUser } from "./user" 
+
+
+let user = {
+  name: 'Маг', 
+  health: 90,
+}
+
+let h = healthUser(user)
+console.log(h);
 
