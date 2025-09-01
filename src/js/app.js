@@ -12,6 +12,7 @@
 
 // saveGame();
 import { healthUser } from "./user" 
+import { sortByHealth as heroSortByHealth } from "./hero";
 
 
 let user = {
@@ -22,3 +23,11 @@ let user = {
 let h = healthUser(user)
 console.log(h);
 
+const heroes = [
+  {name: 'мечник', health: 10},
+  {name: 'маг', health: 100},
+  {name: 'лучник', health: 80},
+]
+
+let sortedHeroes = heroSortByHealth(heroes)
+console.log(sortedHeroes)
